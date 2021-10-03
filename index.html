@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tipsy Unicycle</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="unicyclist.css" />
+    <link rel="stylesheet" type="text/css" href="meteor.css" />
+  </head>
+
+  <body>
+    <div class="main-content">
+      <div class="unicyclist">
+        <img id="unicyclist" src="assets/Step1.png" alt="Unicyclist" />
+      </div>
+      <div class="ground">
+        <div class="stripes" id="stripes">  
+        </div>
+        <div class="side-walk">
+          
+        </div>
+      </div>
+      <div id="player-ui">
+        <div id="score-wrapper">
+          <h1>
+            Score
+          </h1>
+          <h1 id="score">
+            1
+          </h1>
+        </div>
+        <h1 id="game-over" class="hidden">
+          GAME OVER
+        </h1>
+      </div>
+      <div class="clickable-areas main-content">
+        <button id="left">
+          TILT<br /><span class="direction">RIGHT</span>
+        </button>
+        <button id="right">
+          TILT<br /><span class="direction">LEFT</span>
+        </button>
+        <div id="meteor-div" class="meteor" style="display:none">
+          <img id="meteor" src="assets/Meteor.png" alt="Meteor"/>
+        </div>
+        <div id="meteor1-div" class="meteor1" style="display:none">
+          <img id="meteor" src="assets/Asteroid.png" alt="Meteor"/>
+        </div>
+        <div id="meteor2-div" class="meteor2" style="display:none">
+          <img id="meteor" src="assets/Meteor.png" alt="Meteor"/>
+        </div>
+        <div id="meteor3-div" class="meteor3" style="display:none">
+          <img id="meteor" src="assets/Asteroid.png" alt="Meteor"/>
+        </div>
+        <div id="meteor4-div" class="meteor4" style="display:none">
+          <img id="meteor" src="assets/Meteor.png" alt="Meteor"/>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="constants.js"></script>
+    <script src="unicyclist.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
