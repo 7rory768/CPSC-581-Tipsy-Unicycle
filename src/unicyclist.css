@@ -1,0 +1,52 @@
+.unicyclist {
+  position: absolute;
+  bottom: 30vh;
+  height: 30vh;
+}
+.unicyclist img#unicyclist {
+  height: 30vh;
+  -webkit-transform-origin: 50% 84%;
+  -moz-transform-origin: 50% 84%;
+  -ms-transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
+  transition: transform 1200ms ease;
+}
+
+.unicyclist img#unicyclist.fallen-right {
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+    -moz-transform: rotate(-90deg) translateX(100%);
+  -webkit-transform: rotate(-90deg) translateX(100%);
+  -o-transform: rotate(-90deg) translateX(100%);
+  -ms-transform: rotate(-90deg) translateX(100%);
+  transform: rotate(-90deg) translateY(100%);
+}
+
+.unicyclist img#unicyclist.fallen-left {
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+    -moz-transform: rotate(-90deg) translateX(50%);
+  -webkit-transform: rotate(-90deg) translateX(50%);
+  -o-transform: rotate(-90deg) translateX(50%);
+  -ms-transform: rotate(-90deg) translateX(50%);
+  transform: rotate(-90deg) translateY(50%);
+}
+
+.unicyclist img#unicyclist.tilt-right {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.unicyclist img#unicyclist.tilt-left{
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
